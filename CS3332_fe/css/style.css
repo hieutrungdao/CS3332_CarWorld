@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Lato&family=Roboto+Slab:wght@300&family=Roboto:wght@300;700&family=Titan+One&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+  
+}
+
+html {
+    scroll-behavior: smooth;
+  }

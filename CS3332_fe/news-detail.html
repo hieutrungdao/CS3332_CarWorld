@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Car ecommerce</title>
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- Start your project here-->
+  <!-- Navbar -->
+
+  <nav class=" navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- Container wrapper -->
+    <div class="container">
+      <div class="container-fluid  d-flex align-items-center justify-content-around">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0" href="./index.html">
+            <img src="./img/carworld_logo-removebg-preview.png" alt="MDB Logo" height="30" loading="lazy" />
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./news.html">News</a>
+            </li>
+            <li class="nav-item" id="check-user">
+              <a class="nav-link text-dark" href="#">Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./aboutus.html">About us</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-lg-flex align-items-center d-sm-block sm-flex-column">
+          <!-- Icon -->
+          <div class="input-group rounded me-4">
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+              aria-describedby="search-addon" />
+          </div>
+          <!-- Button trigger modal -->
+          <div class="me-3 collapse navbar-collapse loginDelete" id="navbarSupportedContent" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal" style="cursor: pointer;">
+
+            <p id="loginChange" class="mt-3">Login</p>
+
+          </div>
+          <div class="me-3 collapse navbar-collapse" id="navbarSupportedContent">
+            <a id="registerChange" href="./register.html" style="cursor: pointer; color: #3f3f3f;">
+              Register
+            </a>
+          </div>
+
+
+
+          <!-- Avatar -->
+          <div class="dropdown collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+              role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              <div id="img-default" style="width:25px ;">
+              <img src="./img/image/anonymousAvt.png" class="rounded-circle" height="25"
+                alt="Black and White Portrait of a Man" loading="lazy" />
+              </div>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+              <li>
+                <a class="dropdown-item" href="./user.html">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./mySetting.html">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" id="logout">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Container wrapper -->
+    </div>
+  </nav>
+
+  <!-- Navbar -->
+
+  <!-- news detail -->
+    <div class="container mt-5 pt-5">
+        <h2 class="col-md-8 fw-bold">New 2023 Honda Civic Type R to be revealed tomorrow
+        </h2>
+        <h5 class="col-md-8 mt-4">
+            Long-awaited VW Golf R rival will finally be unwrapped ahead of a launch in the coming months
+
+        </h5>
+        <div class="d-flex mt-4">
+            <p class="pe-2" style="border-right: 1px solid;">By <a href="">Kien Nguyen</a></p>
+            <p><i class="far fa-clock ps-2"></i> 20 July, 2022</p>
+        </div>
+        <div class="d-md-flex justify-content-between">
+            <div class="col-md-8 col-sm-12 ">
+           
+                <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/civic_type_r_suzuka_99.jpg?itok=4M_P4Ivy" class="d-block w-100" alt="Wild Landscape"/>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/civic_type_r_suzuka_98.jpg?itok=LSDOCgff" class="d-block w-100" alt="Camera"/>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/civic_type_r_suzuka_96.jpg?itok=REDGa9Tz" class="d-block w-100" alt="Exotic Fruits"/>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div>
+                    <p class="mt-4">The new Honda Civic Type R will finally be unwrapped tomorrow (Thursday 21 July), as the hugely anticipated hot hatchback enters its sixth generation and 25th year on sale. </p>
+                    <p>The Type R was previously teased in an image (below) which gave little away beyond confirming it will be marked out from the standard Civic by traditional red Type R badging, a bespoke honeycomb grille and a more aggressive air intake arrangement.</p>
+                    <p>But further details – most notably about what lies behind the grille – will only be made public at the car's public debut, the date for which was confirmed 50 years (to the day) since the first-generation Honda Civic went on sale. This year also marks the 25th anniversary of the Civic Type R. </p>
+                    <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/2023-honda-civic-type-r-front-end-teaser.jpg?itok=G1AKqkrl" alt="" class="img-fluid">
+                    <p>We still don’t know the new hot hatchback's performance figures, but the broken record suggests that it could gain a slight boost in power. The Civic Type R was earlier said to be "ready for Nürburgring testing", suggesting a front-wheel-drive record attempt could be on the cards at the Nordschleife, too. 
+    
+                    </p>
+                    <p>The new Renault Mégane RS rival won't be radically different from its predecessor externally. The overall body shape, with its low, wide stance, saloon-style boot lid and big rear wing is familiar, while distinctive triple-exit exhaust pipes and red brake calipers provide another nod to its performance potential. </p>
+                    <p>The spoiler features a new raised mounting, while the smaller lip spoiler on the boot lid no longer appears to dissect the rear window. Further visible changes include a lower shoulder line, a lower bonnet line and lower headlights, all features derived from the freshly launched eighth-generation Civic hatchback.</p>
+                    <p>The cabin design is expected to largely follow suit, too, with a new free-standing central touchscreen mounted atop a minimalist dashboard - albeit marked out with the use of Alcantara and red styling cues. </p>
+                    <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/_mz_3683.jpg?itok=3OroozU_ " alt="" class="img-fluid">
+                    <p>Honda has made good on a promise to electrify its European line-up by 2022, but notably that goal applies to only the brand's "mainstream" products. The Civic Type R is an enthusiast-oriented proposition that accounts for only a small percentage of European sales.</p>
+                    <p>So it remains a strong possibility that the Civic Type R will forge ahead with an upgraded and enhanced version of the current car's 2.0-litre turbo four, which sends 316bhp to the front axle for a 0-62mph time of 5.8secs and a top speed of up to 169mph. Honda has gone only so far as to reveal that it will be "the most powerful Civic ever", leaving official figures for tomorrow's reveal.</p>
+
+                </div>
+                <h2 class="p-2"><i class="far fa-comment me-2"></i>Rate & Comment</h2>
+                <section class="rounded-4" style="background-color: #f5fffa;">
+                  <div class="container my-4 py-4 text-dark">
+                    <div class="row d-flex justify-content-start">
+                      <div class="col-md-12 col-lg-12 col-xl-12">
+                        <div class="card">
+                          <div class="card-body p-4">
+                            <div class="d-flex flex-start w-100">
+                              <img class="rounded-circle shadow-1-strong me-3"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(21).webp" alt="avatar" width="65"
+                                height="65" />
+                              <div class="w-100">
+                                <h5>Add a comment</h5>
+                                <ul class="rating mb-3 d-flex justify-content-start p-0" data-mdb-toggle="rating"
+                                  style="list-style: none;">
+                                  <li>
+                                    <i class="far fa-star fa-sm text-danger me-2 " title="Bad"></i>
+                                  </li>
+                                  <li>
+                                    <i class="far fa-star fa-sm text-danger me-2" title="Poor"></i>
+                                  </li>
+                                  <li>
+                                    <i class="far fa-star fa-sm text-danger me-2" title="OK"></i>
+                                  </li>
+                                  <li>
+                                    <i class="far fa-star fa-sm text-danger me-2" title="Good"></i>
+                                  </li>
+                                  <li>
+                                    <i class="far fa-star fa-sm text-danger me-2" title="Excellent"></i>
+                                  </li>
+                                </ul>
+                                <div class="form-outline">
+                                  <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                                  <label class="form-label" for="textAreaExample">What is your view?</label>
+                                </div>
+                                <div class="d-flex justify-content-end mt-3">
+        
+                                  <button type="button" class="btn btn-success">
+                                    Send <i class="fas fa-long-arrow-alt-right ms-1"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 col-lg-12 col-xl-12 mt-4">
+                        <div class="card text-dark">
+                          <div class="card-body p-4">
+                            <h4 class="mb-0">Recent comments</h4>
+                            <p class="fw-light mb-4 pb-2">Latest Comments section by users</p>
+        
+                            <div class="d-flex flex-start">
+                              <img class="rounded-circle shadow-1-strong me-3" src="./img/hieudao.png" alt="avatar" width="60"
+                                height="60" />
+                              <div>
+                                <h6 class="fw-bold mb-1">Hieu Trung Dao</h6>
+                                <div class="d-flex align-items-center mb-3">
+                                  <p class="mb-0">
+                                    June 07, 2022
+                                    <span class="badge bg-primary">Pending</span>
+                                  </p>
+                                  <a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a>
+                                  <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+                                  <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                                </div>
+                                <p class="mb-0">
+                                  Xe the nay ai mua ?
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+        
+                          <hr class="my-0" />
+        
+                          <div class="card-body p-4">
+                            <div class="d-flex flex-start">
+                              <img class="rounded-circle shadow-1-strong me-3"
+                                src="https://scontent.fhan15-2.fna.fbcdn.net/v/t1.6435-9/149665145_2929313553969452_9126721707431834922_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=wKTlDUZNnmsAX8eDSFC&_nc_ht=scontent.fhan15-2.fna&oh=00_AT_NFpbVMvkv4S1-MElUJIlHeurqmrGhZKKIh8Lujs4X2g&oe=62F384F7"
+                                alt="avatar" width="60" height="60" />
+                              <div>
+                                <h6 class="fw-bold mb-1">Kien Trung Nguyen</h6>
+                                <div class="d-flex align-items-center mb-3">
+                                  <p class="mb-0">
+                                    May 10, 2022
+                                    <span class="badge bg-success">Approved</span>
+                                  </p>
+                                  <a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a>
+                                  <a href="#!" class="text-success"><i class="fas fa-redo-alt ms-2"></i></a>
+                                  <a href="#!" class="link-danger"><i class="fas fa-heart ms-2"></i></a>
+                                </div>
+                                <p class="mb-0">
+                                  Xe thi cung dep day, nhung khong dep bang doi mat cua em
+                                  - Kien simp lord -
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+        
+                          <hr class="my-0" style="height: 1px;" />
+        
+                          <div class="card-body p-4">
+                            <div class="d-flex flex-start">
+                              <img class="rounded-circle shadow-1-strong me-3" src="./img/cc.png" alt="avatar" width="60"
+                                height="60" />
+                              <div>
+                                <h6 class="fw-bold mb-1">Cuong Dinh Doan</h6>
+                                <div class="d-flex align-items-center mb-3">
+                                  <p class="mb-0">
+                                    June 2, 2022
+                                    <span class="badge bg-danger">Rejected</span>
+                                  </p>
+                                  <a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a>
+                                  <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+                                  <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                                </div>
+                                <p class="mb-0">
+                                  Sau khi mua xe toi cam thay con LX-570 nay chay rat ngon, nhung ma hoi ton xang. Dap ga 1 cai
+                                  mat me 2 cai banh my roi ? The nen la toi chi cho 4 sao thoi
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+        
+                          <hr class="my-0" />
+        
+                          <div class="card-body p-4">
+                            <div class="d-flex flex-start">
+                              <img class="rounded-circle shadow-1-strong me-3"
+                                src="https://scontent.fhan15-2.fna.fbcdn.net/v/t1.6435-9/38765195_2128819500690057_6913815972579115008_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=WW1lyFNExN0AX9zUvxt&_nc_ht=scontent.fhan15-2.fna&oh=00_AT-GVM4KL7HfJ45NXjsEj3CaAMT-aG-tdYFduPRs_G1_tw&oe=62F4E185"
+                                alt="avatar" width="60" height="60" />
+                              <div>
+                                <h6 class="fw-bold mb-1">Minh Ngo Truong</h6>
+                                <div class="d-flex align-items-center mb-3">
+                                  <p class="mb-0">
+                                    March 30, 2022
+                                    <span class="badge bg-primary">Pending</span>
+                                  </p>
+                                  <a href="#!" class="link-muted"><i class="fas fa-pencil-alt ms-2"></i></a>
+                                  <a href="#!" class="link-muted"><i class="fas fa-redo-alt ms-2"></i></a>
+                                  <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                                </div>
+                                <p class="mb-0">
+                                  Cong ty anh co tuyen nhan vien cat CSS khong ? Em nhan cat cac loai HTML CSS
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                    <div class="mt-1 d-flex justify-content-center">
+                      <button type="button" class="btn btn-primary lg-w-25 md-w-50 ">Read more comment</button>
+                    </div>
+        
+                  </div>
+        
+                </section>
+            </div>
+            <div class="col-md-3 col-sm-12 pt-md-0 pt-sm-4">
+                <h4>LASTEST DRIVES</h4>
+                <a href="" class="text-dark">
+    
+                    <div class="col-12">
+                        <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/99_mini_resolute_front_dynamic.jpg?itok=sGJxoYlD"
+                            alt="" class="img-thumbnail">
+                        <h5>Mini Cooper S 5-Door Hatch Resolute Edition 2022 review</h5>
+                    </div>
+                </a>
+                <a href="" class="text-dark">
+    
+                    <div class="col-12 d-flex pt-4">
+                        <div class="col-6 pe-2">
+                            <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/peugeot-308-front-tracking.jpg?itok=PXHOWl6h"
+                                alt="" class="img-thumbnail">
+    
+                        </div>
+                        <div class="col-6 ">
+                            <p>Peugeot 308 1.6 Hybrid 225 GT Premium 2022</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="" class="text-dark">
+    
+                    <div class="col-12 d-flex pt-4">
+                        <div class="col-6 pe-2">
+                            <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/kia-niro-ev-2022-001-tracking-front.jpg?itok=mIY66QVt"
+                                alt="" class="img-thumbnail">
+    
+                        </div>
+                        <div class="col-6 ">
+                            <p>Kia Niro EV 2022 review</p>
+                        </div>
+    
+                    </div>
+                </a>
+                <a href="" class="text-dark">
+    
+                    <div class="col-12 d-flex pt-4">
+                        <div class="col-6 pe-2">
+                            <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/kia-niro-phev-2022-001-tracking-front.jpg?itok=u6LUX9Vg"
+                                alt="" class="img-thumbnail">
+    
+                        </div>
+                        <div class="col-6 ">
+                            <p>Kia Niro Plug-in Hybrid 2022 review</p>
+                        </div>
+    
+                    </div>
+                </a>
+                <a href="" class="text-dark">
+    
+                    <div class="col-12 d-flex pt-4">
+                        <div class="col-6 pe-2">
+                            <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/1_ford_focus_st_2022_front_corner.jpg?itok=mqiyPCUk"
+                                alt="" class="img-thumbnail">
+    
+                        </div>
+                        <div class="col-6 ">
+                            <p>Ford Focus ST automatic 2022 UK review</p>
+                        </div>
+    
+                    </div>
+                </a>
+                <hr>
+                <div class="d-flex justify-content-center">
+                    <a href="" class="text-dark fw-bold">View all lastet drives <i
+                            class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+                <hr>
+                <h4 class="fw-bold mt-4">New car news</h4>
+                <a href="" class="text-dark">
+    
+                    <div class="col-12">
+                        <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/99_porsche_911_classic_front_tracking_dynamic_.jpg?itok=-Cp1r_2l"
+                            alt="" class="img-thumbnail">
+                        <h5>Porsche 911 Sport Classic 2022 review</h5>
+                    </div>
+                </a>
+    
+                <h4 class="fw-bold mt-4">Motosport news</h4>
+                <a href="" class="text-dark">
+    
+                    <div class="col-12">
+                        <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/99-peugoet-90x-front-tracking.jpg?itok=2ifl50qW"
+                            alt="" class="img-thumbnail">
+                        <h5>Why radical Peugeot 9X8 is a game-changing race car
+                        </h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+  <!-- news detail -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <div class="container">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+
+                <img class="w-100" src="./img/carworld_logo-removebg-preview.png" alt="">
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">New</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Used</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Luxury</a>
+                </p>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Service
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Sell</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Reviews</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p><i class="fas fa-home me-3"></i> Hanoi, Vietnam</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  carecomerce@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="">Car Ecomerce</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                  <button type="button" id="close" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div id="error-login" class="d-flex flex-column align-items-center justify-content-center mt-4 mb-3" >
+                <i class="fas fa-user-circle fa-2xl"></i>
+                <span>
+                  <h7 class="d-flex justify-content-center fw-bold" style="color: red;"></h7>
+                </span>
+              </div>
+
+
+              <div class="modal-body">
+                  <form id="formLogin" method="post">
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                          <input type="email" id="form1Example1" class="form-control" />
+                          <label class="form-label" for="form1Example1">Email address</label>
+                      </div>
+
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                          <input type="password" id="form1Example2" class="form-control" />
+                          <label class="form-label" for="form1Example2">Password</label>
+                      </div>
+
+                      <!-- 2 column grid layout for inline styling -->
+                      <div class="row mb-4">
+                          <div class="col d-flex justify-content-center">
+                              <!-- Checkbox -->
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="form1Example3"
+                                      checked />
+                                  <label class="form-check-label" for="form1Example3"> Remember me </label>
+                              </div>
+                          </div>
+
+                          <div class="col">
+                              <!-- Simple link -->
+                              <a href="#!">Forgot password?</a>
+                          </div>
+
+                      </div>
+
+                      <!-- Submit button -->
+                      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <div class="col d-flex justify-content-center">
+                      <!-- Simple link -->
+                      <a href="#!">You have no account? Register now !</a>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+    ></script>
+</body>
+<script src="login.js"></script>
+<script src="logout.js"></script>
+<script src="setAvtUser.js"></script>
+<script src="user.js"></script>
+<script src="mySetting.js"></script>
+<script src="register.js"></script>
+<script src="check.js"></script>
+
+</html>

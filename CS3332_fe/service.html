@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Car ecommerce</title>
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- Start your project here-->
+  <!-- Navbar -->
+
+  <nav class=" navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- Container wrapper -->
+    <div class="container">
+      <div class="container-fluid  d-flex align-items-center justify-content-around">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0" href="./index.html">
+            <img src="./img/carworld_logo-removebg-preview.png" alt="MDB Logo" height="30" loading="lazy" />
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./news.html">News</a>
+            </li>
+            <li class="nav-item" id="check-user">
+              <a class="nav-link text-dark" href="#">Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./aboutus.html">About us</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-lg-flex align-items-center d-sm-block sm-flex-column">
+          <!-- Icon -->
+          <div class="input-group rounded me-4">
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+              aria-describedby="search-addon" />
+          </div>
+          <!-- Button trigger modal -->
+          <div class="me-3 collapse navbar-collapse loginDelete" id="navbarSupportedContent" data-mdb-toggle="modal"
+            data-mdb-target="#exampleModal" style="cursor: pointer;">
+
+            <p id="loginChange" class="mt-3">Login</p>
+
+          </div>
+          <div class="me-3 collapse navbar-collapse" id="navbarSupportedContent">
+            <a id="registerChange" href="./register.html" style="cursor: pointer; color: #3f3f3f;">
+              Register
+            </a>
+          </div>
+
+
+
+          <!-- Avatar -->
+          <div class="dropdown collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+              role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              <div id="img-default" style="width:25px ;">
+              <img src="./img/image/anonymousAvt.png" class="rounded-circle" height="25"
+                alt="Black and White Portrait of a Man" loading="lazy" />
+              </div>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+              <li>
+                <a class="dropdown-item" href="./user.html">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./mySetting.html">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" id="logout">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+      <!-- Container wrapper -->
+    </div>
+  </nav>
+
+  <!-- //Navbar -->
+
+        
+                <div class="col-lg-12">
+                    <div class="bg-image">
+                        <img
+                          src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?cs=srgb&dl=pexels-mike-b-120049.jpg&fm=jpg"
+                          class="img-fluid"
+                          alt="Sample"
+                        />
+                        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                          <div class="d-flex justify-content-center align-items-center h-100">
+                            <h1 class="text-white mb-0">Service Car</h1>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="detail_service mt-4">
+                    <div class="container">
+                        <div class="row g-0 bg-light position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4">
+                              <img
+                                src="https://www.mercedes-benz.com.vn/vi/passengercars/being-an-owner/offers/current-offers/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide/image.MQ6.7.20210318035156.jpeg"
+                                class="w-100"
+                                alt="hollywood sign"
+                              />
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0">
+                              <h5 class="mt-0">Columns with stretched link</h5>
+                              <p>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
+                                faucibus.
+                              </p>
+                              <a href="#" class="stretched-link">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 bg-light position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4">
+                              <img
+                                src="https://www.mercedes-benz.com.vn/vi/passengercars/being-an-owner/offers/current-offers/_jcr_content/par/productinfotextimage_1927154862/media2/slides/videoimageslide/image.MQ6.7.20201007063215.jpeg"
+                                class="w-100"
+                                alt="hollywood sign"
+                              />
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0">
+                              <h5 class="mt-0">Columns with stretched link</h5>
+                              <p>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
+                                faucibus.
+                            </p>
+                                <ul>
+                                    <li>Phasellus iaculis neque</li>
+                                    <li>Purus sodales ultricies</li>
+                                    <li>Vestibulum laoreet porttitor sem</li>
+                                    <li>Ac tristique libero volutpat at</li>
+                                  </ul>
+                              <a href="#" class="stretched-link">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 bg-light position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4">
+                              <img
+                                src="https://www.mercedes-benz.com.vn/vi/passengercars/being-an-owner/offers/current-offers/_jcr_content/par/productinfotextimage_1109240749/media2/slides/videoimageslide/image.MQ6.7.20190605064327.jpeg"
+                                class="w-100"
+                                alt="hollywood sign"
+                              />
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0">
+                              <h5 class="mt-0">Columns with stretched link</h5>
+                              <p>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
+                                faucibus.
+                              </p>
+                              <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check me-3"></i>Phasellus iaculis neque</li>
+                                <li><i class="fa-solid fa-check me-3"></i>Purus sodales ultricies</li>
+                                
+                              </ul>
+                              <a href="#" class="stretched-link">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 bg-light position-relative">
+                            <div class="col-md-6 mb-md-0 p-md-4">
+                              <img
+                              src="https://www.mercedes-benz.com.vn/vi/passengercars/being-an-owner/service-maintenance/maintenance-package/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide/image.MQ6.7.20200904103042.jpeg"
+                                class="w-100"
+                                alt="hollywood sign"
+                              />
+                            </div>
+                            <div class="col-md-6 p-4 ps-md-0">
+                                
+                              <h5 class="mt-0">Columns with stretched link</h5>
+                              <p>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
+                                faucibus.
+                              </p>
+                              <a href="#" class="stretched-link">Go somewhere</a>
+                              <button type="button" class="btn btn-primary d-block mt-4">Primary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted mt-4">
+      <!-- Section: Social media -->
+      <div class="container">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+
+                <img class="w-100" src="./img/carworld_logo-removebg-preview.png" alt="">
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">New</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Used</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Luxury</a>
+                </p>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Service
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Sell</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Reviews</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p><i class="fas fa-home me-3"></i> Hanoi, Vietnam</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  carecomerce@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="">Car Ecomerce</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                  <button type="button" id="close" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div id="error-login" class="d-flex flex-column align-items-center justify-content-center mt-4 mb-3" >
+                <i class="fas fa-user-circle fa-2xl"></i>
+                <span>
+                  <h7 class="d-flex justify-content-center fw-bold" style="color: red;"></h7>
+                </span>
+              </div>
+
+
+              <div class="modal-body">
+                  <form id="formLogin" method="post">
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                          <input type="email" id="form1Example1" class="form-control" />
+                          <label class="form-label" for="form1Example1">Email address</label>
+                      </div>
+
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                          <input type="password" id="form1Example2" class="form-control" />
+                          <label class="form-label" for="form1Example2">Password</label>
+                      </div>
+
+                      <!-- 2 column grid layout for inline styling -->
+                      <div class="row mb-4">
+                          <div class="col d-flex justify-content-center">
+                              <!-- Checkbox -->
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="form1Example3"
+                                      checked />
+                                  <label class="form-check-label" for="form1Example3"> Remember me </label>
+                              </div>
+                          </div>
+
+                          <div class="col">
+                              <!-- Simple link -->
+                              <a href="#!">Forgot password?</a>
+                          </div>
+
+                      </div>
+
+                      <!-- Submit button -->
+                      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <div class="col d-flex justify-content-center">
+                      <!-- Simple link -->
+                      <a href="#!">You have no account? Register now !</a>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+    ></script>
+</body>
+<script src="login.js"></script>
+<script src="logout.js"></script>
+<script src="setAvtUser.js"></script>
+<script src="user.js"></script>
+<script src="mySetting.js"></script>
+<script src="register.js"></script>
+<script src="check.js"></script>
+
+</html>
+

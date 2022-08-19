@@ -1,0 +1,61 @@
+package com.cs3332.carEcommerce.security.Jwt;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
+import org.springframework.web.filter.OncePerRequestFilter;
+
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+public class JwtTokenFilter extends OncePerRequestFilter {
+
+    private static final Logger logger = LoggerFactory.getLogger(JwtTokenFilter.class);
+
+    @Autowired
+    private JwtProvider jwtProvider;
+
+    @Autowired
+    private UserDetailsService userDetailsService;
+
+    @Override
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+
+        try {
+            String token = getJwt(request);
+            if (token != null && jwtProvider.validateToken(token)) {
+                String userName = jwtProvider.getUserNameFromToken(token);
+
+                UserDetails userDetail = userDetailsService.loadUserByUsername(userName);
+                UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
+                        //This constructor should only be used by AuthenticationManager or AuthenticationProvider implementations that are satisfied with producing a trusted
+                        userDetail, null, userDetail.getAuthorities()
+                );
+
+                authenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request)); //assign token upon web
+                SecurityContextHolder.getContext().setAuthentication(authenticationToken); //after register -> setAuthentication in SecurityContextHolder
+            }
+        } catch (Exception e) {
+            logger.error("Can't set user authentication -> Message: {}", e.getMessage());
+        }
+
+        filterChain.doFilter(request, response);
+    }
+
+    private String getJwt(HttpServletRequest request) {
+
+        String authHeader = request.getHeader("Authorization");
+        if (authHeader != null && authHeader.startsWith("Bearer")) {
+            return authHeader.replace("Bearer", "");
+        }
+        return null;
+    }
+}
